@@ -21,7 +21,7 @@
     "defaultMessage": "Custom app"
   },
   "appsView.description": {
-    "defaultMessage": "Applications from your MCP servers and Apps build by goose itself. You can ask it to create new apps through the chat interface and they will appear here."
+    "defaultMessage": "Applications from your MCP servers and Apps built by goose itself. You can ask it to create new apps through the chat interface and they will appear here."
   },
   "appsView.errorLoading": {
     "defaultMessage": "Error loading apps: {error}"
@@ -112,6 +112,12 @@
   },
   "cardButtons.launch": {
     "defaultMessage": "Launch"
+  },
+  "chat.notification.taskComplete.body": {
+    "defaultMessage": "Click here to bring Goose back into focus."
+  },
+  "chat.notification.taskComplete.title": {
+    "defaultMessage": "Goose finished the task."
   },
   "chatInput.contextWindow": {
     "defaultMessage": "Context window"
@@ -932,9 +938,6 @@
   "envVarsSection.variableName": {
     "defaultMessage": "Variable name"
   },
-  "environmentBadge.alpha": {
-    "defaultMessage": "Alpha"
-  },
   "environmentBadge.dev": {
     "defaultMessage": "Dev"
   },
@@ -1055,17 +1058,14 @@
   "extensionItem.configureExtension": {
     "defaultMessage": "Configure {name} Extension"
   },
-  "extensionItem.toggleExtension": {
-    "defaultMessage": "Toggle {name} extension On or Off"
-  },
   "extensionList.availableExtensions": {
-    "defaultMessage": "Available Extensions ({count})"
+    "defaultMessage": "Available On Demand ({count})"
   },
   "extensionList.builtInExtension": {
     "defaultMessage": "Built-in extension"
   },
   "extensionList.defaultExtensions": {
-    "defaultMessage": "Default Extensions ({count})"
+    "defaultMessage": "Active by Default ({count})"
   },
   "extensionList.noExtensions": {
     "defaultMessage": "No extensions available"
@@ -1125,7 +1125,7 @@
     "defaultMessage": "Browse extensions"
   },
   "extensionsView.defaultNote": {
-    "defaultMessage": "Extensions enabled here are used as the default for new chats. You can also toggle active extensions during chat."
+    "defaultMessage": "Extensions stay available here, and Goose can load them on demand during a chat."
   },
   "extensionsView.description": {
     "defaultMessage": "These extensions use the Model Context Protocol (MCP). They can expand Goose's capabilities using three main components: Prompts, Resources, and Tools. {searchShortcut} to search."
@@ -1135,6 +1135,15 @@
   },
   "extensionsView.searchPlaceholder": {
     "defaultMessage": "Search extensions..."
+  },
+  "externalBackendSection.certFingerprint": {
+    "defaultMessage": "Certificate Fingerprint (optional)"
+  },
+  "externalBackendSection.certFingerprintHelp": {
+    "defaultMessage": "Pin a specific TLS certificate fingerprint. If omitted, the certificate is trusted on first use (TOFU)."
+  },
+  "externalBackendSection.certFingerprintPlaceholder": {
+    "defaultMessage": "AA:BB:CC:... or sha256/base64"
   },
   "externalBackendSection.description": {
     "defaultMessage": "By default goose launches a server for you, use this to connect to an external goose server"
@@ -1436,20 +1445,14 @@
   "headersSection.value": {
     "defaultMessage": "Value"
   },
-  "huggingFaceModelSearch.directDownload": {
-    "defaultMessage": "Direct Download"
-  },
-  "huggingFaceModelSearch.directDownloadDescription": {
-    "defaultMessage": "Specify a model directly: {format}"
-  },
-  "huggingFaceModelSearch.directDownloadErrorMsg": {
-    "defaultMessage": "Failed to start the download. Check the spec: {error}"
-  },
-  "huggingFaceModelSearch.directDownloadFailed": {
-    "defaultMessage": "Direct download failed"
-  },
   "huggingFaceModelSearch.download": {
     "defaultMessage": "Download"
+  },
+  "huggingFaceModelSearch.downloaded": {
+    "defaultMessage": "Downloaded"
+  },
+  "huggingFaceModelSearch.downloading": {
+    "defaultMessage": "Downloading…"
   },
   "huggingFaceModelSearch.loadingVariants": {
     "defaultMessage": "Loading variants..."
@@ -1474,6 +1477,9 @@
   },
   "huggingFaceModelSearch.searchPlaceholder": {
     "defaultMessage": "Search for GGUF models..."
+  },
+  "huggingFaceModelSearch.tooLarge": {
+    "defaultMessage": "May not fit in memory ({size} model, {available} available)"
   },
   "imagePreview.altText": {
     "defaultMessage": "goose image"
@@ -1842,7 +1848,7 @@
     "defaultMessage": "Vision"
   },
   "localInferenceSettings.visionEncoderDownloading": {
-    "defaultMessage": "Vision encoder downloading\u2026"
+    "defaultMessage": "Vision encoder downloading…"
   },
   "localInferenceSettings.visionEncoderNotDownloaded": {
     "defaultMessage": "Vision encoder not downloaded"
@@ -2311,6 +2317,9 @@
   },
   "modelsBottomBar.currentModel": {
     "defaultMessage": "Current model"
+  },
+  "modelsBottomBar.loadingModel": {
+    "defaultMessage": "Loading model..."
   },
   "modelsBottomBar.localModelSettings": {
     "defaultMessage": "Local Model Settings"
@@ -3525,7 +3534,7 @@
     "defaultMessage": "YAML"
   },
   "schedulesView.confirmDelete": {
-    "defaultMessage": "Are you sure you want to delete schedule \"{id}\"?"
+    "defaultMessage": "Remove schedule \"{id}\"? The recipe will be kept."
   },
   "schedulesView.createSchedule": {
     "defaultMessage": "Create Schedule"
@@ -4045,6 +4054,12 @@
   },
   "settings.notifications.openSettings": {
     "defaultMessage": "Open Settings"
+  },
+  "settings.notifications.task.description": {
+    "defaultMessage": "Notify when Goose finishes a task while the window is in the background"
+  },
+  "settings.notifications.task.title": {
+    "defaultMessage": "Task completion notifications"
   },
   "settings.notifications.title": {
     "defaultMessage": "Notifications"

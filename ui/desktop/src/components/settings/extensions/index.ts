@@ -1,12 +1,8 @@
 export { DEFAULT_EXTENSION_TIMEOUT, nameToKey } from './utils';
 
-export {
-  activateExtensionDefault,
-  toggleExtensionDefault,
-  deleteExtension,
-} from './extension-manager';
+export { activateExtensionDefault, deleteExtension } from './extension-manager';
 
-export { syncBundledExtensions, initializeBundledExtensions } from './bundled-extensions';
+export { pruneDeprecatedBundledExtensions, syncBundledExtensions } from './bundled-extensions';
 
 export { addExtensionFromDeepLink } from './deeplink';
 
